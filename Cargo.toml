@@ -1,0 +1,19 @@
+[package]
+name = "code_writer"
+version = "0.1.0"
+authors = ["Simon Johnston <johnstonskj@gmail.com>"]
+edition = "2018"
+description = "A very simple code generation model and writers for Rust."
+documentation = "https://docs.rs/code_writer/"
+repository = "https://github.com/johnstonskj/rust-code_writer.git"
+license = "MIT"
+readme = "README.md"
+publish = true
+
+[dependencies]
+error-chain = "0.12"
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false # Disable features which are enabled by default
+features = ["precommit-hook", "run-cargo-fmt", "run-cargo-test" ]
